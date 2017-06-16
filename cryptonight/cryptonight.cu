@@ -19,7 +19,7 @@ extern int device_mpcount[8];
 extern int device_map[8];
 extern int device_config[8][2];
 
-void cuda_devicereset(int threads)
+extern "C" void cuda_devicereset(int threads)
 {
 	for(int i = 0; i < threads; i++)
 	{
